@@ -1,14 +1,7 @@
-# Eclipse
-.project
-.classpath
-.settings
-
-# Maven
-target
 
 # Gradle
 .gradle
-build/
+/build/
 
 #IDEA
 .idea/
