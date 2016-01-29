@@ -11,5 +11,5 @@ target
 build/
 
 #IDEA
-.idea
+.idea/
 *.iml
