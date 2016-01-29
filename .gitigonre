@@ -8,7 +8,7 @@ target
 
 # Gradle
 .gradle
-./build
+build/
 
 #IDEA
 .idea
