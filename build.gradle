@@ -1,0 +1,23 @@
+group 'me.zzw.app'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.6
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'de.neuland-bfi', name: 'jade4j', version: '1.1.4'
+    compile group: 'org.apache.commons', name: 'commons-jexl3', version: '3.0'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+task copyJars(type: Copy) {
+    from configurations.runtime
+    into './gradle/wrapper/dists' // 目标位置
+}
+
+
